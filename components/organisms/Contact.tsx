@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { ContactCard } from "@/components/molecules/ContactCard"
-import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react"
+import { motion } from "framer-motion";
+import { ContactCard } from "@/components/molecules/ContactCard";
+import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
 
 const contactInfo = [
   {
@@ -18,11 +18,6 @@ const contactInfo = [
     href: "tel:+5493415010421",
   },
   {
-    icon: MapPin,
-    title: "Location",
-    value: "Rosario, Santa Fe, Argentina",
-  },
-  {
     icon: Github,
     title: "GitHub",
     value: "rodrigo1995vav",
@@ -34,7 +29,7 @@ const contactInfo = [
     value: "rodrigovaldivia95",
     href: "https://linkedin.com/in/rodrigovaldivia95",
   },
-]
+];
 
 export function Contact() {
   return (
@@ -50,7 +45,8 @@ export function Contact() {
             Get In <span className="text-primary">Touch</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Ready to work together? Feel free to reach out through any of these channels
+            Ready to work together? Feel free to reach out through any of these
+            channels
           </p>
         </motion.div>
 
@@ -68,10 +64,11 @@ export function Contact() {
           className="text-center mt-12"
         >
           <p className="text-muted-foreground">
-            © 2024 Rodrigo Valdivia. Built with Next.js, TypeScript, and Tailwind CSS.
+            © 2024 Rodrigo Valdivia. Built with Next.js, TypeScript, and
+            Tailwind CSS.
           </p>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
