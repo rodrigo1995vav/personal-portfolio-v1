@@ -41,7 +41,7 @@ export function Hero() {
                 {"<hello-world />"}
               </motion.p>
               <h1 className="text-4xl md:text-6xl font-bold">
-                Hi, I'm <GlitchText text="Rodrigo" className="text-primary" />
+                Hi, I am <GlitchText text="Rodrigo" className="text-primary" />
               </h1>
               <div className="text-xl md:text-2xl text-muted-foreground">
                 <TypeWriter
