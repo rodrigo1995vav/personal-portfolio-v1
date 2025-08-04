@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ContactCard } from "@/components/molecules/ContactCard";
-import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
+import { Mail, Phone, Github, Linkedin } from "lucide-react";
 
 const contactInfo = [
   {
