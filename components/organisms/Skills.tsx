@@ -63,8 +63,14 @@ const skillCategories = [
 
 export function Skills() {
   return (
-    <section id="skills" className="py-20">
-      <div className="container mx-auto px-4">
+    <section
+      id="skills"
+      className="py-20 relative overflow-hidden bg-gradient-to-b from-muted/30 to-background"
+    >
+      <div className="absolute top-20 right-0 w-72 h-72 bg-gradient-to-br from-primary/5 to-accent/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 left-0 w-72 h-72 bg-gradient-to-br from-accent/5 to-primary/5 rounded-full blur-3xl" />
+
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -88,14 +94,20 @@ export function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: categoryIndex * 0.1 }}
+              whileHover={{ y: -8 }}
+              className="h-full"
             >
-              <Card className="h-full">
+              <Card className="h-full relative overflow-hidden border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl group">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-primary" />
+
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center">
-                      <category.icon className="w-4 h-4 text-primary" />
+                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <category.icon className="w-5 h-5 text-primary" />
                     </div>
-                    {category.title}
+                    <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                      {category.title}
+                    </span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -110,6 +122,7 @@ export function Skills() {
                     ))}
                   </div>
                 </CardContent>
+                <div className="absolute -bottom-20 -right-20 w-40 h-40 bg-gradient-to-br from-primary/10 to-accent/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </Card>
             </motion.div>
           ))}
