@@ -33,8 +33,11 @@ const contactInfo = [
 
 export function Contact() {
   return (
-    <section id="contact" className="py-20">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="py-20 relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-primary/10 to-accent/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-br from-accent/10 to-primary/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
+
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -50,7 +53,7 @@ export function Contact() {
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {contactInfo.map((contact, index) => (
             <ContactCard key={contact.title} {...contact} index={index} />
           ))}
@@ -64,7 +67,7 @@ export function Contact() {
           className="text-center mt-12"
         >
           <p className="text-muted-foreground">
-            © 2024 Rodrigo Valdivia. Built with Next.js, TypeScript, and
+            © 2026 Rodrigo Valdivia. Built with Next.js, TypeScript, and
             Tailwind CSS.
           </p>
         </motion.div>
