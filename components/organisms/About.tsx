@@ -41,7 +41,7 @@ export function About() {
                   Rosario, Santa Fe, Argentina
                 </p>
                 <p className="text-sm text-muted-foreground mt-2">
-                  Based in Argentina, working with global teams and clients
+                  Based in Argentina, working remotely with global teams
                 </p>
               </CardContent>
             </Card>
@@ -86,7 +86,7 @@ export function About() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span>English</span>
-                    <Badge variant="secondary">C1</Badge>
+                    <Badge variant="secondary">C1 - Advanced</Badge>
                   </div>
                 </div>
               </CardContent>
@@ -107,13 +107,14 @@ export function About() {
                 Professional Summary
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Detail-oriented and highly skilled Front End JavaScript
-                Developer with a solid background in both front-end and back-end
-                development. Leveraging a diverse set of technologies, I bring a
-                wealth of experience to create robust and scalable web
-                applications. Known for delivering high-quality code and
-                solutions within tight deadlines, I am passionate about staying
-                up-to-date with the latest industry trends and technologies.
+                I am a Fullstack Developer with 4 years of experience, driven by
+                the challenge of building products that actually work for people.
+                My journey has taken me from lead roles in backend architecture
+                for E-commerce to crafting seamless mobile and web experiences.
+                I specialize in the TypeScript ecosystem—specifically NestJS and
+                React—and I enjoy the balance of working independently while
+                staying in sync with a great team. Beyond the code, I'm a C1
+                English speaker who values clear communication and constant learning.
               </p>
             </CardContent>
           </Card>

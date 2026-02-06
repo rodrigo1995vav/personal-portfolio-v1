@@ -9,10 +9,11 @@ import { Download, Github, Linkedin, Mail } from "lucide-react";
 
 const codeSnippet = `const developer = {
   name: "Rodrigo Valdivia",
-  role: "Frontend Developer",
+  role: "Fullstack Engineer (JS)",
   location: "Rosario, Argentina",
-  skills: ["React", "Next.js", "TypeScript", "Node.js", "Express.js", "Nest.js", "React Native", "Angular", "SQL, "MongoDB"],
-  passion: "Building dynamic, user-focused web and mobile applications with seamless front-end experiences and robust back-end solutions"
+  experience: "4 years",
+  skills: ["React", "Next.js", "TypeScript", "NestJS", "Node.js", "React Native", "AWS", "PostgreSQL", "MongoDB"],
+  passion: "Building products that actually work for people"
 };
 
 console.log(developer.greeting());`;
@@ -46,10 +47,10 @@ export function Hero() {
               <div className="text-xl md:text-2xl text-muted-foreground">
                 <TypeWriter
                   texts={[
-                    "Frontend Developer",
-                    "React Specialist",
-                    "TypeScript Enthusiast",
-                    "FullStack Focused",
+                    "Fullstack Engineer",
+                    "TypeScript Specialist",
+                    "React & NestJS Expert",
+                    "Mobile Developer",
                   ]}
                 />
               </div>
@@ -61,15 +62,13 @@ export function Hero() {
               transition={{ delay: 0.6 }}
               className="text-lg text-muted-foreground max-w-lg leading-relaxed"
             >
-              Dedicated Front End Developer with deep expertise in JavaScript
-              and TypeScript, excelling in crafting responsive, high-performance
-              interfaces using React, Next.js, and Angular. Equally proficient
-              in back-end development, leveraging Node.js, Express, and
-              databases like PostgreSQL and MongoDB to build robust, end-to-end
-              systems. Passionate about optimizing both client and server-side
-              components for seamless, scalable solutions, I deliver innovative,
-              user-focused applications while staying current with industry
-              trends.
+              Fullstack Developer with 4 years of experience, driven by the
+              challenge of building products that actually work for people.
+              My journey has taken me from lead roles in backend architecture
+              for E-commerce to crafting seamless mobile and web experiences.
+              I specialize in the TypeScript ecosystem—specifically NestJS and
+              React—and I enjoy the balance of working independently while staying
+              in sync with a great team.
             </motion.p>
 
             <motion.div
