@@ -9,45 +9,53 @@
   --color-card-foreground: #0f172a;
   --color-popover: #ffffff;
   --color-popover-foreground: #0f172a;
-  --color-primary: #012340;
-  --color-primary-foreground: #f8fafc;
+  --color-primary: #6366f1;
+  --color-primary-foreground: #ffffff;
   --color-secondary: #f1f5f9;
   --color-secondary-foreground: #0f172a;
-  --color-muted: #f1f5f9;
+  --color-muted: #f8fafc;
   --color-muted-foreground: #64748b;
-  --color-accent: #f1f5f9;
-  --color-accent-foreground: #0f172a;
-  --color-destructive: #dc2626;
-  --color-destructive-foreground: #f8fafc;
+  --color-accent: #10b981;
+  --color-accent-foreground: #ffffff;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
   --color-border: #e2e8f0;
   --color-input: #e2e8f0;
-  --color-ring: #012340;
-  --radius: 0.5rem;
+  --color-ring: #6366f1;
+  --radius: 0.75rem;
+
+  --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --gradient-accent: linear-gradient(135deg, #10b981 0%, #14b8a6 100%);
+  --gradient-card: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
 
   --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Consolas,
     "Liberation Mono", Menlo, monospace;
 }
 
 .dark {
-  --color-background: #012340;
+  --color-background: #0f172a;
   --color-foreground: #f8fafc;
-  --color-card: #1e3a5f;
+  --color-card: #1e293b;
   --color-card-foreground: #f8fafc;
-  --color-popover: #012340;
+  --color-popover: #1e293b;
   --color-popover-foreground: #f8fafc;
-  --color-primary: #025939;
-  --color-primary-foreground: #f0fdf4;
-  --color-secondary: #1e3a5f;
+  --color-primary: #818cf8;
+  --color-primary-foreground: #0f172a;
+  --color-secondary: #1e293b;
   --color-secondary-foreground: #f8fafc;
-  --color-muted: #1e3a5f;
+  --color-muted: #1e293b;
   --color-muted-foreground: #94a3b8;
-  --color-accent: #1e3a5f;
-  --color-accent-foreground: #f8fafc;
-  --color-destructive: #7f1d1d;
-  --color-destructive-foreground: #f8fafc;
+  --color-accent: #34d399;
+  --color-accent-foreground: #0f172a;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
   --color-border: #334155;
   --color-input: #334155;
-  --color-ring: #025939;
+  --color-ring: #818cf8;
+
+  --gradient-primary: linear-gradient(135deg, #818cf8 0%, #a78bfa 100%);
+  --gradient-accent: linear-gradient(135deg, #34d399 0%, #2dd4bf 100%);
+  --gradient-card: linear-gradient(135deg, #1e293b 0%, #334155 100%);
 }
 
 /* Base styles */
@@ -163,6 +171,39 @@ html {
 
 .animate-glitch {
   animation: glitch 0.3s ease-in-out infinite;
+}
+
+/* Gradient utilities */
+.gradient-primary {
+  background: var(--gradient-primary);
+}
+
+.gradient-accent {
+  background: var(--gradient-accent);
+}
+
+.gradient-card {
+  background: var(--gradient-card);
+}
+
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glass morphism effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .glass-card {
+  background: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 /* Container utilities */
