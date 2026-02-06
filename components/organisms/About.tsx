@@ -113,7 +113,7 @@ export function About() {
                 for E-commerce to crafting seamless mobile and web experiences.
                 I specialize in the TypeScript ecosystem—specifically NestJS and
                 React—and I enjoy the balance of working independently while
-                staying in sync with a great team. Beyond the code, I'm a C1
+                staying in sync with a great team. Beyond the code, I&apos;m a C1
                 English speaker who values clear communication and constant learning.
               </p>
             </CardContent>
