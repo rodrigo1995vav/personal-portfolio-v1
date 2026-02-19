@@ -77,17 +77,22 @@ export function Hero() {
               transition={{ delay: 0.8 }}
               className="flex flex-wrap gap-4"
             >
-              <Button size="lg" className="gap-2">
-                <Download className="w-4 h-4" />
-                Download CV
+              <Button size="lg" className="gap-2" asChild>
+                <a href="/resume.pdf" download="Rodrigo_Valdivia_Resume.pdf">
+                  <Download className="w-4 h-4" />
+                  Download CV
+                </a>
               </Button>
               <Button
                 variant="outline"
                 size="lg"
                 className="gap-2 bg-transparent"
+                asChild
               >
-                <Mail className="w-4 h-4" />
-                Contact Me
+                <a href="#contact">
+                  <Mail className="w-4 h-4" />
+                  Contact Me
+                </a>
               </Button>
             </motion.div>
 

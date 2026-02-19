@@ -61,7 +61,7 @@ export function About() {
                 </div>
                 <p className="font-medium">Information Systems Engineering</p>
                 <p className="text-sm text-muted-foreground">
-                  Universidad del Centro Educativo Latinoamericano
+                  Universidad de la Marina Mercante (UdeMM)
                 </p>
               </CardContent>
             </Card>
@@ -108,13 +108,14 @@ export function About() {
               </h3>
               <p className="text-muted-foreground leading-relaxed">
                 I am a Fullstack Developer with 4 years of experience, driven by
-                the challenge of building products that actually work for people.
-                My journey has taken me from lead roles in backend architecture
-                for E-commerce to crafting seamless mobile and web experiences.
-                I specialize in the TypeScript ecosystem—specifically NestJS and
-                React—and I enjoy the balance of working independently while
-                staying in sync with a great team. Beyond the code, I&apos;m a C1
-                English speaker who values clear communication and constant learning.
+                the challenge of building products that actually work for
+                people. My journey has taken me from lead roles in backend
+                architecture for E-commerce to crafting seamless mobile and web
+                experiences. I specialize in the TypeScript
+                ecosystem—specifically NestJS and React—and I enjoy the balance
+                of working independently while staying in sync with a great
+                team. Beyond the code, I&apos;m a C1 English speaker who values
+                clear communication and constant learning.
               </p>
             </CardContent>
           </Card>
